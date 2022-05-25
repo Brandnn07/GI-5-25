@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+
+.tile {
+    background-color: black;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child for reference */
+.tile:nth-child(16n + 16),
+.tile:nth-child(16n + 14),
+.tile:nth-child(16n + 12),
+.tile:nth-child(16n + 10),
+.tile:nth-child(16n + 7),
+.tile:nth-child(16n + 5),
+.tile:nth-child(16n + 3),
+.tile:nth-child(16n + 1) {
+  background-color: white;
+}

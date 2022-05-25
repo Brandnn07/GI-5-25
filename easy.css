@@ -1,0 +1,44 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.flag {
+    display: flex;
+    align-items: flex-start;
+}
+
+table {
+    height: 456px;
+    width: 800px;
+    border-style: solid;
+
+}
+
+
+
+tr:nth-child(even) {
+    background: white;
+}
+
+tr:nth-child(odd) {
+    background: red;
+}
+
+
+.stars {
+    background: blue;
+    width: 290px;
+    height: 240px;
+    margin-top: -454px;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+    font-size: 30px;
+    letter-spacing: 16px;
+    
+}
